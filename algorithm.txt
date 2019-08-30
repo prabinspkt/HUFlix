@@ -1,0 +1,17 @@
+=================
+HOW PROGRAM WORKS:
+=================
+->The first thing our program does is ask user for some inputs like the time they have to watch, rating they gave to the last show/movie and the genre they want to watch. 
+->According to these user input values, the program creates a playlist of shows/movies that it suggests the users to watch. The source of these shows/movies is FavoriteTVShowMovies.txt file.
+->A show/movie is suggested if its duration is less than or equal to the time user has and if the rating of the show/movie is greater than or equal to the rating user gave to the last show/movie and the movie/show is of same genre as user input genre.
+->If user inputs "Drama" as their genre and if a movie/show has genre "Mystery/Drama", that movie/show is included in the user's playlist.
+->This playlist is then displayed (only the names) to the user and they are asked for the name of the show/movie they want the details of. 
+->Once the user inputs the name of the show/movie from the diplayed list, they are given the details of that show/movie. The details include title, genre, duration, user rating, rating and year of release.
+
+==================
+EXCEPTIONS HANDLED:
+===================
+1) If a user enters empty value in any fields, it throws an exception stating that at least one of the entered values was empty and the program asks for user input again.
+2) If the user enters values other than numbers in time and rating fields, it throws an invalid arguments exception and the program asks for input again.
+3) User has the option to input genre in any of lower or upper case string.
+4) After the user has been displayed the playlist tailored to him/her, they can ask for details about a show/movie. If they input the name that is not in the list, it means that the item is not in their playlist. So they will be displayed a message conveying that the item is not in the list.
